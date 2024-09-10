@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+
+.card {
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+
+.no-scrollbar::-webkit-scrollbar{
+  display: none;
+}
+
+.no-scrollbar{
+  -ms-overflow-style:none;
+  scrollbar-width: none;
+}
+
+/* Ensure mobile menu icon is displayed properly */
+.menu-icon {
+  display: flex;
+  align-items: center;
+}
+
+/* Transition for hover effects */
+/* Adjust navbar menu for mobile and desktop */
+.navbar-menu {
+  transition: all 0.3s ease;
+}
+
+/* Ensure menu icon is visible */
+.menu-icon {
+  display: flex;
+  align-items: center;
+}
+
+/* Adjust styles for mobile menu */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    position: absolute;
+    top: 4rem; /* Adjust based on your navbar height */
+    left: 0;
+    right: 0;
+    background: black;
+    padding: 1rem;
+    z-index: 10;
+  }
+
+  .navbar-menu.active {
+    display: block;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+
